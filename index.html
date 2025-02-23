@@ -74,7 +74,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="left-content">
-                        <div class="thumb" style="position: absolute;">
+                        <div class="thumb" style="position: relative;">
                             <div class="inner-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 2; width: 80%; max-width: 800px;">
                                 <h4>Premium Windows &amp; Doors</h4>
                                 <span>At Innoview, we deliver premium European aluminum windows and doors with unmatched value. Our precision-crafted solutions are customized to fit any project, combining top quality, bespoke design, and affordability.
@@ -92,7 +92,28 @@
         </div>
     </div>
     <!-- ***** Main Banner Area End ***** -->
+<style>
+    @media (max-width: 768px) {
+        .inner-content {
+            width: 90%;  /* Adjust width to ensure it doesn't overflow on small screens */
+            max-width: 90%; /* Ensure the content doesn't get too wide */
+            padding: 0 15px; /* Add padding for better spacing on mobile */
+        }
 
+        .inner-content h4 {
+            font-size: 1.5rem; /* Reduce the font size for the heading */
+        }
+
+        .inner-content span {
+            font-size: 1rem; /* Reduce the font size for the description */
+        }
+
+        img {
+            height: auto;  /* Let image scale naturally */
+            max-height: 50vh;  /* Ensure the image height fits well on small screens */
+        }
+    }
+</style>
 
     <!-- ***** Men Area Starts ***** -->
     <section class="section" id="men">
