@@ -93,43 +93,95 @@
     </div>
     <!-- ***** Main Banner Area End ***** -->
 <style>
-    @media (max-width: 768px) {
-        .inner-content {
-            width: 90%;  /* Ensure content fits well on small screens */
-            max-width: 90%;  /* Ensure the content doesn’t stretch too much */
-            padding: 0 15px;  /* Add padding to avoid text touching edges */
-            top: 50%;  /* Keep text vertically centered */
-            transform: translate(-50%, -50%);  /* Maintain centering */
-            max-height: 70%; /* Limit the height of the container */
-            overflow: hidden; /* Hide overflow to prevent text cut off */
-        }
+/* Responsive Banner Styling */
+.main-banner {
+    position: relative;
+    text-align: center;
+}
 
-        /* Make the heading smaller */
-        .inner-content h4 {
-            font-size: .75rem;  /* Smaller font size on mobile */
-            line-height: 1.2; /* Adjust line height for better fit */
-            margin-bottom: 10px; /* Optional: Adds space between heading and text */
-            word-wrap: break-word;  /* Allow long words to wrap in mobile */
-        }
+.thumb {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Make banner cover full viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        /* Make the description text smaller */
-        .inner-content span {
-            font-size: 0.5rem;  /* Smaller font size on mobile */
-            line-height: 1.4; /* Increase line height for better readability */
-            margin-bottom: 20px; /* Optional: Adds space below the text */
-            word-wrap: break-word;  /* Allow long words to wrap in mobile */
-        }
+.inner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+}
 
-        /* Optional: Adjust button size for mobile */
-        .main-border-button a {
-            font-size: 0.9rem;  /* Adjust button text size */
-        }
+.inner-content h4 {
+    font-size: 2.5vw; /* Adjust based on screen width */
+    margin-bottom: 10px;
+}
 
-        img {
-            height: auto;  /* Let the image scale naturally */
-            max-height: 50vh;  /* Adjust the image height for mobile */
-        }
+.inner-content span {
+    font-size: 1.2vw;
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.main-border-button a {
+    padding: 12px 20px;
+    font-size: 1.2vw;
+    display: inline-block;
+    margin-top: 15px;
+    background: #f5a623;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .inner-content {
+        width: 90%;
     }
+
+    .inner-content h4 {
+        font-size: 6vw; /* Increase readability */
+    }
+
+    .inner-content span {
+        font-size: 4vw;
+    }
+
+    .main-border-button a {
+        font-size: 4vw;
+        padding: 10px 15px;
+    }
+
+    .thumb {
+        height: 50vh; /* Reduce height on mobile */
+    }
+}
 </style>
 
     <!-- ***** Men Area Starts ***** -->
