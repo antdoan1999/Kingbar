@@ -111,7 +111,7 @@
 
 
 .inner-content {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -183,9 +183,12 @@
         font-size: 4vw;
         padding: 10px 15px;
     }
-
     .thumb {
-        height: 50vh; /* Reduce height on mobile */
+        min-height: 60vh; /* Adjust height for smaller screens */
+    }
+
+    .banner-img {
+        object-position: center; /* Keep focus on the center */
     }
 }
 </style>
