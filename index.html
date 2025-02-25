@@ -92,7 +92,49 @@
         </div>
     </div>
     <!-- ***** Main Banner Area End ***** -->
+<style>
+  @media (max-width: 768px) {
+    .thumb {
+        position: relative;
+        height: auto; /* Allow it to adjust based on content */
+    }
 
+    .thumb img {
+        width: 100%;
+        height: auto; /* Ensures image height adapts */
+        object-fit: cover;
+        display: block;
+    }
+
+    .inner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+        max-width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .inner-content h4 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .inner-content span {
+        font-size: 14px; /* Reduce text size */
+        line-height: 1.4;
+        display: block;
+    }
+
+    .main-border-button a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+</style>
     <!-- ***** Men Area Starts ***** -->
     <section class="section" id="men">
         <div class="container">
