@@ -99,14 +99,16 @@
     text-align: center;
 }
 
-.thumb {
+  .thumb {
     position: relative;
     width: 100%;
-    height: 100vh; /* Make banner cover full viewport */
+    min-height: 100vh; /* Ensure it covers full viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
+
 
 .inner-content {
     position: absolute;
