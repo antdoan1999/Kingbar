@@ -768,11 +768,11 @@ banner
 /* Mobile Version */
 @media only screen and (max-width: 768px) {
   .main-banner .left-content .inner-content h4 {
-    font-size: 28px; /* Adjust this size for mobile */
+    font-size: 24px; /* Adjust this size for mobile */
   }
 
   .main-banner .left-content .inner-content span {
-    font-size: 12px; /* Adjust this size for mobile */
+    font-size: 10px; /* Adjust this size for mobile */
   }
 }
 /*
